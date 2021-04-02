@@ -32,9 +32,9 @@ The requirements file would contain the names of the libraries and their version
 - numpy==1.18.5
 - dash==1.17.0
 
-### Step 3: Creation of **[setup.sh](http://setup.sh/) and Procfile**
+### Step 3: Creation of setup.sh and Procfile**
 
-The [setup.sh](http://setup.sh/) file contains some commands to set the problem on the Heroku side, so create a [setup.sh](http://setup.sh/) file (you can use the nano command) and save the following in that file (change the email in the middle of the file to your correct email).
+The setup.sh file contains some commands to set the problem on the Heroku side, so create a setup.sh file (you can use the nano command) and save the following in that file (change the email in the middle of the file to your correct email).
 
 Make sure that your terminal is in your project folder.
 
