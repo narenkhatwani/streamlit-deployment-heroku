@@ -174,5 +174,16 @@ git commit -m "Enter your message here"
 git push heroku master
 heroku ps:scale web=1
 ```
+# Renaming the App from the Heroku Dashboard
 
-###
+If you use the Heroku CLI to rename an app from inside its associated Git repository, your local Heroku remote is updated automatically. **However, other instances of the repository must update the remote’s details manually.**
+
+You can run the following commands to update the remote’s details in other repository instances:
+
+```bash
+$ git remote rm heroku
+$ heroku git:remote -a newname
+```
+
+Replace `newname` with the new name of the app, as specified in the `rename` command.
+
